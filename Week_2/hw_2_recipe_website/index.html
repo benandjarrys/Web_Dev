@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>BOX MODEL</title>
+	<!-- INTERNAL STYLE SHEET -->
+
+	<style type="text/css">
+		/*
+		Use the universal selector to get rid of all the default margins and padding 
+		from every element on the page so we can write our own from scratch 
+		
+		* = universal
+		
+		*/
+		
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		/*  
+			TAG SELECTOR
+			Applying styles to the body tag will trickle down to all child elements on the 
+		    page unless they are overwritten by a more specific tag.
+		*/
+
+		body{
+			background-image: url("grilled_cheese.jpg";)
+			font-family:'Helvetica', Arial, sans-serif;
+			color: purple;
+			font-style:italic;
+		}
+	div{
+		background-color:rgba(255,0,100,0.4);
+	}
+.container{
+		/*
+		
+		Starter width in pixels
+		Divs are the elements that display block by default. they want to take up 100% of 
+		the space and they dont want to share horizontal space with another element.
+		
+		Block level elements can recieve a width and a height to override their default size
+		
+		*/
+		
+		width: 900px;
+		
+		/*
+		
+		We can center block elements that have a defined width using margin auto for the left and right values
+		
+		Think of margin as personal space between elements.
+
+		*/
+		
+/*		background-color:yellow;*/
+/*		margin: 0 auto;*/
+		padding: 10px;
+	}
+.thumbnail{
+		/*give out thumbnails a fixed width of 300px*/
+		width:300px;
+		height:300px;
+		float:left;
+		/* Without the float:left; , the different instances of "thumbnail" would stack vertically downwards; */
+}
+.clear{
+	clear:both;
+}
+
+.container.clear-fix::after{
+	content: ' ';
+	display: block;
+	clear: both;
+	/* ensure some older compatibility */
+	height: 0;
+	font-size: 0;
+	visibility: hidden;	
+	/* For older browsers, so that it doesn't crash / render incorrectly */
+}
+
+.container-fluid{
+	width: 90%;
+	padding: 2%;
+	margin: 0 auto;
+}
+
+.thumbnail-fluid{
+	width:25%;
+	height:300px;
+	float:left;
+	margin:10px;
+	border:10px dashed red;
+}
+
+.thumbnail-border{
+	width:25%;
+	height:300px;
+	float:left;
+	margin:10px;
+
+	width:270px;
+	padding:10px;
+
+	width:250px;	
+	border-width: 5px;
+	border-style:solid;
+	border-color:#0000ff;
+	/* border: width | style | color; */
+}
+
+
+	</style>
+
+
+</head>
+<body>
+<h1> DIIIIIICKS </h1>
+<div> UNFORETOLD DICKS </div>
+<!--Margin-->
+<h2> Fixed Pxel Based Layout and class = clear </h2>
+<div class="container">
+<div class="thumbnail">THUMB 1</div>
+<div class="thumbnail">THUMB 2</div>
+<div class="thumbnail">THUMB 3</div>
+<br class="clear">
+</div>
+
+<br>
+<h2> Fixed Pxel Based Layout and clear-fix</h2>
+<div class="container clear-fix">
+<div class="container-fluid"> DICKS EVERYWHERE OH MY GOD SEND HELP</div>
+<div class="thumbnail-fluid">THUMB 1</div>
+<div class="thumbnail-fluid">THUMB 2</div>
+<div class="thumbnail-fluid">THUMB 3</div>
+</div>
+
+
+
+<div class="container clear-fix">
+<div class="thumbnail-border">jfoejaof jeiofj afojiaefjow foewafwefwkf jfwoef ewfjwof wjofjwf oewfjwj fowjfoejwof wjeafjeow fjoewjfowajfo wajoj</div>
+<div class="thumbnail-border"></div>
+<div class="thumbnail-border"></div>
+</div>
+<h2> </h2>
+
+
+</body>
+</html>
+
+
+
+
+
+
