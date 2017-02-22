@@ -25,6 +25,8 @@
 * Navigation bar
 * Linking to other pages
 * Divs
+* Inline Block
+*:Hover
 
 ##Skills I will Need
 * Integrate JavaScript to run sprite scripts to create 2D graphics. 
