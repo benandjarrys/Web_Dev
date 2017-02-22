@@ -1,11 +1,18 @@
 # **Prospective Midterm Plan**
 
 ##Concept
-> Creating a blog that voices deep/ unconventional thoughts 
-> and ideas that people feel when they’re not at their best.
-> As I learn to manipulate the UX more, I want to create a page 
-> that allows for comments so that people may help one another 
-> deal with the situations or concerns expressed.
+ Create a blog that voices deep/ unconventional thoughts 
+ and ideas that people feel when they’re not at their best.
+ As I learn to manipulate the UX more, I want to create a page 
+ that allows for comments so that people may help one another 
+ deal with the situations or concerns expressed.
+
+## Site Map
+![Site Map](/img/site_map.png)
+
+## Wireframe / Conceptual
+* 
+
 
 ##Skills I've Learned
 * Navigation bar
@@ -21,3 +28,5 @@
 	* Themes I took inspiration from
 		* Bold and Black
 		* Hip and Minimal
+
+
