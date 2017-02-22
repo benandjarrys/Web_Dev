@@ -8,7 +8,7 @@
  deal with the situations or concerns expressed.
 
 ## Site Map
-![Site Map](/img/site_map.png)
+![Site Map](img/site_map.png "900px")
 
 ## Wireframe / Conceptual
 * 
