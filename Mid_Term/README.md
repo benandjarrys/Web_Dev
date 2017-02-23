@@ -27,6 +27,9 @@
 * Divs
 * Inline Block
 * :Hover
+* Containers
+* Fonts
+
 
 ##Skills I will Need
 * Integrate JavaScript to run sprite scripts to create 2D graphics. 
