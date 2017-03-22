@@ -14,13 +14,111 @@
 <link rel="stylesheet" type="text/css" href="Stylesheets/home.css">
 <style type="text/css">
 
-body {
-    background-image: url("img/Home_Page.png");
-    background-repeat: no-repeat;
-	background-position: center;
-	background-attachment:fixed;
+
+
+body{
+	background-image:url("img/Home_Page.png");
+	background-position: top;
+	background-repeat: no-repeat;
 	background-color:black;
-	
+	max-width: 100%;
+	max-height:100%;
+	opacity:0;
+	transition:3s;
+}
+
+body:hover{
+opacity:1;
+
+}
+body:hover::after{
+	opacity:1;
+	background-image:none;
+}
+
+
+img{
+max-width: 100%;
+max-height:100%;
+
+}
+
+
+
+#container{
+    width: 100%;
+    height: 300px;
+    float:bottom;
+    position:fixed;
+    background-color: none;
+    opacity:1;
+    margin: 20px;
+    margin-top:250px;	
+    margin-left:300px;
+    padding: 0px;
+    overflow:auto;
+    transition:2s;
+}
+
+
+#page{
+	position:relative;
+    width: 11.8%;
+    background-color:none;
+    float: left;
+    height: 300px;
+    margin-right:100px;
+
+}
+
+#page img {
+  position:absolute;
+  left:0;
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  transition-delay: 0.5s;
+}
+
+#page img.top:hover{
+	opacity:0;	
+}
+
+
+
+/* Makes The div transition and move*/
+/*
+#page:hover{
+	background-color: white;
+	width:20%;
+
+}
+
+/* Adds Wording After Hovering*/
+/*
+#page:hover:after{
+	color: #ddd;
+	float:right;
+	font-size:200px;
+	font-family: Impact;
+	content:"....About....";
+	font-weight: bold;	
+}
+*/
+
+#clear {
+    clear: both;
+}
+
+.container {
+width:100%;
+height:100%;
+}
+
+.advance_text{
+	color:white;
 }
 
 </style>
@@ -28,22 +126,47 @@ body {
 </head>
 <body>
 
-<nav id="main-nav">
-	<ul class="clear-fix">	
-		<li><a href="#">Home</a></li>
+
+<div id="container">
+
+	<a href="about.html">
+		<div id="page">
+  			<img class="bottom" src="img/book_page_about.png">
+ 			<img class="top" src="img/book_page.jpg">
+		</div>
+	</a>
+    
+
+<a href="about.html">
+		<div id="page">
+  			<img class="bottom" src="img/book_page_happy.png">
+ 			<img class="top" src="img/book_page.jpg">
+		</div>
+	</a>
+    
+
+	<a href="about.html">
+		<div id="page">
+  			<img class="bottom" src="img/book_page_dark.png">
+ 			<img class="top" src="img/book_page.jpg">
+		</div>
+	</a>
+    
+<p id="random_links"></p>
+	
+<script>
+if (Math.random() < 0.5) {
+     text = "<a href='dark.html'><img src='img/book_page_random.png' height='11.8%' width='11.8%'</img></a>";
+} else {
+    text = "<a href='happy.html'><img src='img/book_page_random.png' height='11.8%' width='11.8%'</img></a>";
+}
+document.getElementById("random_links").innerHTML = text;
+</script>
+
+</div>
 
 
-		<li><a href="thoughts.html">Thoughts</a>
-			<ul>
-				<li><a href="#">Happy</a></li>
-				<li><a href="#">Dark</a></li>
-				<li><a href="#">Random </a></li>
-				<li><a href="#">Random Ideas</a></li>						
-			</ul>
-			</li>	
 
-
-		<li><a href="about.html">About</a></li>				
 
 </body>
 </html>
