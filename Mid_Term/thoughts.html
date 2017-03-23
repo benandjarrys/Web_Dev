@@ -22,7 +22,7 @@ p, h1{
 	font-size: 40px;
 	color:#fff;
 	opacity: 0;
-    transition:opacity .2s ease-in 15s;
+    transition:opacity .1s ease-in 15s;
 }
 
 p:hover, h1:hover{
@@ -33,11 +33,23 @@ p:hover, h1:hover{
 #container_introduction{
 	width:100%;
 	height:100%;
-	margin-top:30px;
+	margin-top:60px;
 	padding:70px;
 	background-color:rgba(100,100,100,0);
 	color:black;
 	float:left;
+}
+
+#container_introduction::before {
+  content: "";
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .2; 
+  z-index: -1;
+  background: url(img/about_background.png);
 }
 
 #thoughts_transition{
@@ -63,7 +75,7 @@ p:hover, h1:hover{
 		<li><a href="#">Thoughts</a>
 			<ul>
 				<li><a href="happy.html">Happy</a></li>
-				<li><a href="dark.html">Darker</a></li>			
+				<li><a href="dark.html">Dark</a></li>			
 			</ul>
 			</li>	
 		<li><a href="about.html">About</a></li>				
@@ -72,16 +84,18 @@ p:hover, h1:hover{
 </nav>
 
 <div id="container_introduction">
-	<h1>People have both happy and dark thoughts.</h1>
+	<h1>People have both happy <em>and</em> dark thoughts.</h1>
 	<br>
-	<h1>Go ahead and see what you've been thinking.</h1>
+	<h1>Its completely normal to think of the latter more.</h1>
 	<br>
-	<div id="thoughts_transition">
+	<h1>Go ahead and explore your mind.</h1>
+	<br>
+	<div id="thoughts_transition"> 
 		<a href="happy.html">	
-			<img src="img/book_page_happy.png" width="40%">
+			<img src="img/book_page_happy.png" width="30%">
 		</a>
 		<a href="dark.html">	
-			<img src="img/book_page_dark.png" width="40%">
+			<img src="img/book_page_dark.png" width="30%">
 		</a>
 	</div>
 </div>

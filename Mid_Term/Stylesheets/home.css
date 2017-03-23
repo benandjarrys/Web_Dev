@@ -1,4 +1,7 @@
 
+
+/* Instructions for the Nav Bar and Settings throughout the site */
+
 body{
 	font-family: Courier;
 }
@@ -56,7 +59,8 @@ nav ul li:hover > ul li:hover{
 	margin:2px 2px 2px 2px ;
 	font-size:26px;
 }
-		
+
+
 .clear-fix:after{
 	display:block;
 	clear: both;

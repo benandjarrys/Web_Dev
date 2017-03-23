@@ -6,7 +6,7 @@
 
 	<title>Hell Hearted Heaven</title>
 
-<meta name="description" content="Layout for the 'Home' portion of my blog">
+<meta name="description" content="Layout for the Home portion of my blog">
 <meta name="keywords" content="HTML, Semantic HTML, Tutorial">
 <meta name="author" content="Jarrett Lee">
 
@@ -18,24 +18,53 @@ body {
 	background-color:black;
 }
 
-	.container_thoughts{
-	width: 1200px;
-	height:100px;
-	font-size:40px;
-	margin:10px;
+p.double {
+	background-color:black;
+	border-style: double;
+	border-width:5px;
 }
-::before {
+
+
+#container_introduction{
+	width:100%;
+	height:100%;
+	margin:10px auto;
+	margin-top:80px;
+	padding:100px auto;
+	background-color:rgba(100,100,100,0);
+	color:white;
+}
+
+#container_introduction::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0; 
   left: 0;
   width: 100%; 
   height: 100%;  
-  opacity: .4; 
+  opacity: 0.7; 
   z-index: -1;
-  background: url(path/to/your/image);
+  background: url(img/happy_background.png);
+}
 
-background: url()http://www.artsfon.com/pic/201501/2560x1600/artsfon.com-51629.jpg;
+#random_box{
+	margin:30px;
+	padding-bottom:30%;
+	width:95%;
+	position:top;
+	height:80px;
+}
+
+#random_image{
+	width:200px;
+	height:100px; 
+	position:fixed;
+	padding-bottom:5%;
+}
+
+#random_image img{
+	width:100%;
+	height:100%;
 }
 
 
@@ -52,7 +81,7 @@ background: url()http://www.artsfon.com/pic/201501/2560x1600/artsfon.com-51629.j
 		<li><a href="#">Thoughts</a>
 			<ul>
 				<li><a href="happy.html">Happy</a></li>
-				<li><a href="dark.html">Darker</a></li>			
+				<li><a href="dark.html">Dark</a></li>			
 			</ul>
 			</li>	
 		<li><a href="about.html">About</a></li>				
@@ -60,12 +89,61 @@ background: url()http://www.artsfon.com/pic/201501/2560x1600/artsfon.com-51629.j
 <hr>
 </nav>
 
-<div class="container_thoughts">
+<div id="container_introduction">
+	<div id="random_box">
 	
-
-
-
+		<p id="random_links" class ="double"></p>
+		
+<!-- After every line of code is read, Math.random() selects a random number
+	in between the default 0 - 1, and if another condition is met, it is 
+	overwritten. -->		
+		<script>
+	console.log(Math.random());
+		if (Math.random() <= 0.1 && Math.random() > 0) {
+		     text = "<h1>Everyday you are one day closer to your next plate of nachos. Or sushi. Im not your boss you eat whatever you like.</h1>";
+			}
+		if (Math.random() <= 0.2 && Math.random() > 0.1 ) {
+		     text = "<h1>Aliens.</h1>";
+		 	}
+		if (Math.random() <= 0.3 && Math.random() > 0.2) {
+		     text = "<h1>Sneep Snop.</h1>";
+		 	}
+		if (Math.random() <= 0.4 && Math.random() > 0.3) {
+		     text = "<h1>Betcha cant say bubbles angrily</h1>";
+		 } 
+		if (Math.random() <= 0.5 && Math.random() > 0.4) {
+		     text = "<h1>Studying is a contraction of student dying.</h1>";
+			}
+		if (Math.random() <= 0.6 && Math.random() > 0.5 ) {
+		     text = "<h1>What do you call a broken can opener? A cant opener.</h1>";
+		 	}
+		if (Math.random() <= 0.7 && Math.random() > 0.6) {
+		     text = "<h1>Girls dont fart is a myth.</h1>";
+		 	}
+		if (Math.random() <= 0.8 && Math.random() > 0.7) {
+		     text = "<h1>Can you see with your eyes closed if you were invisible?</h1>";
+		 } 
+		if (Math.random() <= 0.9 && Math.random() > 0.8) {
+		     text = "<h1>How Can Mirrors Be Real If Our Eyes Arent Real - Jaden Smith</h1>";
+		 } 
+		if (Math.random() <= 1 && Math.random() > 0.9) {
+		     text = "<h1>Why is it called lukewarm</h1> <br> <h1>Who is Luke and why is he warm</h1> ";
+		 } 
+		 else{
+		 	text = "<h1> Its called garbage <em>can</em> not garbage <em>cannot<em><h1>";
+		 }
+		document.getElementById("random_links").innerHTML = text;
+		console.log(Math.random());
+		</script>
+	</div>
 </div>
+
+<!-- Sticky Random Button -->
+		<footer>
+		<div id ="random_image">
+		<a href="dark.html"><img src="img/random_button.png"> </a>
+		</div>
+		</footer>
 
 
 </body>
