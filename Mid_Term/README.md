@@ -42,4 +42,4 @@
 		* Bold and Black
 		* Hip and Minimal
 
-[My Site]( http://sites.bxmc.poly.edu/~jarrettlee/webdev/index.php/2017/03/29/midterm-project)
+[My Site](http://sites.bxmc.poly.edu/~jarrettlee/webdev/?p=5&preview=true)
