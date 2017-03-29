@@ -2,7 +2,7 @@
 
 ##Concept
  Create a blog that voices deep/ unconventional thoughts 
- and ideas that people feel when they’re not at their best.
+ and ideas that people feel when theyâ€™re not at their best.
  As I learn to manipulate the UX more, I want to create a page 
  that allows for comments so that people may help one another 
  deal with the situations or concerns expressed.
@@ -42,4 +42,4 @@
 		* Bold and Black
 		* Hip and Minimal
 
-
+[My Site]( http://sites.bxmc.poly.edu/~jarrettlee/webdev/index.php/2017/03/29/midterm-project)
